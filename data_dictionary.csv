@@ -1,0 +1,21 @@
+﻿column,description,unit,role
+sample_id,ID observasi simulasi,ID,Identifikasi baris
+lake_id,Kode danau simulasi,ID,Grup untuk pemisahan train/test
+sample_date,Tanggal observasi simulasi,YYYY-MM-DD,Konteks waktu; tanggal dibangkitkan secara acak
+total_nitrogen_mg_l,Total nitrogen,mg/L,Fitur prediktor
+water_temperature_c,Suhu air,°C,Fitur prediktor
+dissolved_oxygen_mg_l,Oksigen terlarut,mg/L,Fitur prediktor
+annual_rainfall_mm,Curah hujan tahunan,mm/tahun,Fitur prediktor
+agricultural_land_use_pct,Persentase penggunaan lahan pertanian,%,Fitur prediktor
+urban_land_use_pct,Persentase penggunaan lahan perkotaan,%,Fitur prediktor
+mean_lake_depth_m,Kedalaman rata-rata danau,m,Fitur prediktor
+ph,Derajat keasaman,satuan pH,Fitur prediktor
+total_phosphorus_ug_l,Total fosfor,µg/L,Pembentuk TSI; tidak dipakai sebagai fitur model
+chlorophyll_a_ug_l,Klorofil-a,µg/L,Pembentuk TSI; tidak dipakai sebagai fitur model
+secchi_depth_m,Kedalaman Secchi,m,Pembentuk TSI; tidak dipakai sebagai fitur model
+tsi_total_phosphorus,TSI dari total fosfor,indeks,Komponen pembentuk CTSI; tidak dipakai sebagai fitur model
+tsi_chlorophyll_a,TSI dari klorofil-a,indeks,Komponen pembentuk CTSI; tidak dipakai sebagai fitur model
+tsi_secchi_depth,TSI dari kedalaman Secchi,indeks,Komponen pembentuk CTSI; tidak dipakai sebagai fitur model
+carlson_tsi_composite,Rata-rata tiga komponen TSI untuk tugas ini,indeks,Target antara untuk pembentukan kelas; tidak dipakai sebagai fitur model
+eutrophication_class,Kelas status trofik operasional,kategori,Label target: Oligotrofik/Mesotrofik/Eutrofik
+data_status,Penanda data,teks,Semua baris ditandai sebagai simulasi

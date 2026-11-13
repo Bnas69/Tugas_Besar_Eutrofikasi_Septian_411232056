@@ -1,0 +1,116 @@
+{
+  "dataset_type": "SIMULASI - bukan pengukuran lapangan",
+  "seed": 61,
+  "n_rows": 1200,
+  "n_lakes": 20,
+  "n_features": 8,
+  "features": [
+    "total_nitrogen_mg_l",
+    "water_temperature_c",
+    "dissolved_oxygen_mg_l",
+    "annual_rainfall_mm",
+    "agricultural_land_use_pct",
+    "urban_land_use_pct",
+    "mean_lake_depth_m",
+    "ph"
+  ],
+  "excluded_target_components": [
+    "total_phosphorus_ug_l",
+    "chlorophyll_a_ug_l",
+    "secchi_depth_m",
+    "carlson_tsi_composite",
+    "tsi_total_phosphorus",
+    "tsi_chlorophyll_a",
+    "tsi_secchi_depth"
+  ],
+  "duplicate_rows_before_cleaning": 0,
+  "missing_predictor_values": 0,
+  "train_rows": 900,
+  "test_rows": 300,
+  "test_lake_ids": [
+    "SIM-LAKE-001",
+    "SIM-LAKE-007",
+    "SIM-LAKE-010",
+    "SIM-LAKE-013",
+    "SIM-LAKE-014"
+  ],
+  "class_counts": {
+    "Oligotrofik": 353,
+    "Mesotrofik": 628,
+    "Eutrofik": 219
+  },
+  "class_percentages": {
+    "Oligotrofik": 29.416666666666668,
+    "Mesotrofik": 52.33333333333333,
+    "Eutrofik": 18.25
+  },
+  "selected_model": "Regresi Logistik",
+  "test_accuracy": 0.7766666666666666,
+  "test_balanced_accuracy": 0.8115133232780293,
+  "test_precision_macro": 0.7333333333333334,
+  "test_recall_macro": 0.8115133232780293,
+  "test_macro_f1": 0.7574990050117231,
+  "test_roc_auc_ovr_macro": 0.9181029386928067,
+  "classification_report": {
+    "Oligotrofik": {
+      "precision": 0.75,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7894736842105263,
+      "support": 54.0
+    },
+    "Mesotrofik": {
+      "precision": 0.9,
+      "recall": 0.7384615384615385,
+      "f1-score": 0.8112676056338028,
+      "support": 195.0
+    },
+    "Eutrofik": {
+      "precision": 0.55,
+      "recall": 0.8627450980392157,
+      "f1-score": 0.6717557251908397,
+      "support": 51.0
+    },
+    "accuracy": 0.7766666666666666,
+    "macro avg": {
+      "precision": 0.7333333333333334,
+      "recall": 0.8115133232780293,
+      "f1-score": 0.7574990050117231,
+      "support": 300.0
+    },
+    "weighted avg": {
+      "precision": 0.8135,
+      "recall": 0.7766666666666666,
+      "f1-score": 0.7836276801023094,
+      "support": 300.0
+    }
+  },
+  "cv_macro_f1_mean": 0.7583742462903399,
+  "cv_macro_f1_std": 0.05729300759554369,
+  "model_comparison": [
+    {
+      "model": "Regresi Logistik",
+      "accuracy": 0.7766666666666666,
+      "balanced_accuracy": 0.8115133232780293,
+      "macro_f1": 0.7574990050117231,
+      "cv_macro_f1_mean": 0.7583742462903399,
+      "cv_macro_f1_std": 0.05729300759554369
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.7725657784481315,
+      "macro_f1": 0.7631032818532818,
+      "cv_macro_f1_mean": 0.729808546950321,
+      "cv_macro_f1_std": 0.05174364759501487
+    }
+  ],
+  "figures": {
+    "class_distribution": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/01_distribusi_kelas.png",
+    "ctsi_distribution": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/02_sebaran_ctsi.png",
+    "tp_chla": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/03_tp_chla_kelas.png",
+    "feature_correlation": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/04_korelasi_fitur.png",
+    "confusion_matrix": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/05_confusion_matrix.png",
+    "model_comparison": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/06_perbandingan_model.png",
+    "feature_importance": "/Users/shilvayasmine/Downloads/Paket_Lengkap_Tugas_Besar_Eutrofikasi_Septian_411232056/figures/07_feature_importance.png"
+  }
+}
